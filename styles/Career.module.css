@@ -1,0 +1,63 @@
+.CareerSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    color: #2c2c2c;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    color: #c35427 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.content {
+    margin-left: -12px;
+}
+
+.btn:hover .rightArrow {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    margin-left: 9px;
+}
+
+.rightArrow {
+    margin-left: 10px;
+    margin-left: -30px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+/* media Query */
+
+@media only screen and (max-width: 991px) {
+    .CareerSec img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .CareerSec h3 {
+        text-align: center;
+        line-height: 1;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .CareerSec p {
+        text-align: center;
+        margin-top: 10px;
+        line-height: 1.2;
+        margin-bottom: 5px;
+    }
+
+    .btn {
+        color: #2c2c2c;
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,51 @@
+.CareerBanner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.txt {
+  align-items: center;
+}
+
+/* .BannerContent {
+  height: 100px;
+} */
+
+.BannerContent h1 {
+  position: relative;
+}
+
+.BannerContent h1::before {
+  content: url(../public/images/heading-particle.png);
+  position: absolute;
+  right: 0;
+  bottom: 190px;
+}
+
+@media only screen and (max-width: 991px) {
+  .CareerBanner {
+    height: auto;
+    padding-top: 80px;
+  }
+
+  .txt {
+    align-items: start;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .CareerBanner {
+    padding-top: 90px;
+  }
+
+  /* .BannerContent {
+    height: 126px;
+  } */
+}
+
+@media only screen and (max-width: 576px) {
+  .CareerBanner {
+    padding-top: 110px;
+  }
+}

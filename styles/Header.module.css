@@ -1,0 +1,131 @@
+.Header {
+  position: relative;
+  z-index: 999999999;
+}
+
+.logo {
+  position: fixed;
+  left: 50px;
+  top: 13px;
+  z-index: 999;
+}
+
+.menu {
+  margin-right: 35px;
+  margin-top: 0px;
+}
+
+.openMenu svg {
+  width: 30px;
+  height: 30px;
+}
+
+.openMenu {
+  position: fixed;
+  right: 50px;
+  top: 20px;
+  z-index: 1;
+}
+
+.navBar {
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-linear-gradient(45deg, #c35427, #ea9c2b);
+  position: fixed;
+  left: -100%;
+  top: 0;
+  transition: all ease-in-out 1s;
+  z-index: 99999999;
+}
+
+.menu svg {
+  width: 30px;
+  height: 30px;
+}
+
+.navBar.active {
+  left: 0;
+}
+
+.navBar ul li {
+  color: white;
+}
+
+.clomenu {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 45px;
+  top: 30px;
+}
+
+.menuList ul li a {
+  transition: all 0.5s ease-in-out;
+}
+
+.menuList ul li a:hover {
+  text-decoration: underline !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.navContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.navBar ul {
+  padding-left: 0;
+}
+
+.navBar ul li a {
+  display: flex;
+  align-items: flex-start;
+}
+
+.socialIcons a:hover {
+  color: black;
+  transition: all ease-in-out 0.5s;
+}
+
+.socialIcons a:hover svg {
+  color: black;
+  transition: all ease-in-out 0.5s;
+}
+
+.socialIcons a svg {
+  transition: all ease-in-out 0.5s;
+}
+
+@media only screen and (max-width: 991px) {
+  .menuList {
+    margin-top: 40vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .menuList {
+    margin-top: 18vw;
+  }
+
+  .openMenu {
+    right: 15px;
+  }
+
+  .logo {
+    margin-left: 4px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .menuList {
+    margin-top: 10vw;
+  }
+
+  .logo {
+    left: 5px;
+  }
+}

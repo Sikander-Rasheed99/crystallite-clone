@@ -1,0 +1,47 @@
+.CareerPackages {
+  display: flex;
+  align-items: center;
+}
+
+.packages {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.11);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 23px;
+  transition: all ease-in-out 0.3s;
+}
+
+.packages:hover {
+  background-image: -webkit-linear-gradient(45deg, #c35427, #ea9c2b);
+  transition: all ease-in-out 0.3s;
+}
+
+.packages:hover h3 {
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+
+.packages:hover img {
+  filter: brightness(0) invert(1);
+  transition: all ease-in-out 0.3s;
+}
+
+@media only screen and (max-width: 767px) {
+  .packages img {
+    width: 20%;
+    height: 20%;
+  }
+
+  .packages {
+    justify-content: space-evenly;
+    gap: 0 20px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.11);
+    padding: 6px;
+    margin-top: 12px;
+  }
+}
