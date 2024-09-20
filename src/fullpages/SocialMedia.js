@@ -46,7 +46,7 @@ const FullPage = () => {
               />
             </div>
             <div className="section">
-              <SocialMediaServices serviceContent={content} />
+              <SocialMediaServices content={serviceContent} />
             </div>
             <div className="section">
               <Footer />
