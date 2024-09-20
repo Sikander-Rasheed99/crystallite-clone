@@ -1,5 +1,7 @@
+import { Inter } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../styles/globals.css'
+import Footer from '@/components/Footer'
 import Header from '@/components/Header';
 
 export const metadata = {
@@ -10,9 +12,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="robots" content="noindex, nofollow" />
-      </head>
       <body>
         <Header />
         {children}
